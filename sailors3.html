@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+<head>
+<body>
+Your name, please
+<input type="text"/>
+<script>
+var depth = prompt("what is depth")
+var heading = prompt("what is heading????")
+
+if(heading == "west" ){
+
+  if(depth <"15"){
+    alert ("Dive")
+  }
+
+
+}
+
+if(heading =="east"){
+  alert ("Straight")
+
+}
+
+if(depth == "15"){
+  alert ("Straight")
+}
+
+if(depth >"15"){
+  alert ("Surface")
+}
+var heading = prompt("Heading?")
+var depth = Number(prompt("Depth"))
+
+if(depth < 15){
+  alert("")
+}
+var are_we_there_yet
+are_we_there_yet = prompt("Are we there yet")
+
+while(are_we_there_yet != "yes"){
+  are_we_there_yet = prompt("Are we there yet")
+}
+
+alert("OKAY!!!")
+var ask_annoying_question = function (){
+  var answer = prompt("Are we there yet?")
+  return answer
+}
+are_we_there_yet = ask_annoying_question()
+
+while(are_we_there_yet !="yes" && are_we_there_yet !="no"){
+  are_we_there_yet = ask_annoying_question()
+}
+</script>
+</body>
+</html>
